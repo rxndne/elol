@@ -1,0 +1,57 @@
+:root{
+  --bg:#0b0f1a;
+  --panel:#0f1724;
+  --accent:#7dd3fc;
+  --text:#e6eef8;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial}
+body{
+  background: linear-gradient(180deg,#071025 0%, #081726 100%);
+  color:var(--text);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+}
+
+.container{
+  width: 860px;
+  max-width: calc(100vw - 48px);
+  text-align:center;
+}
+
+h1{margin:0 0 12px;font-weight:600}
+
+#scoreboard{
+  font-size:28px;
+  margin-bottom:12px;
+  color:var(--accent);
+  letter-spacing:2px;
+  font-weight:700;
+}
+
+canvas{
+  display:block;
+  width:100%;
+  height:auto;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius:8px;
+  box-shadow: 0 6px 30px rgba(2,6,23,0.6);
+  border: 1px solid rgba(125,211,252,0.06);
+  margin:0 auto;
+  cursor: none; /* hide cursor for nicer effect */
+}
+
+.controls{
+  margin:10px 0 0;
+  font-size:13px;
+  color: #bcdff6;
+}
+
+.footer{
+  margin-top:6px;
+  font-size:12px;
+  color:#9fbfdc;
+}
